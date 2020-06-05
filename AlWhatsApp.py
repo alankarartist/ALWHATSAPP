@@ -1,6 +1,5 @@
 import pyttsx3
 import speech_recognition as sr 
-from word2number import w2n
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
