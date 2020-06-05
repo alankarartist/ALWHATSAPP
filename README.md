@@ -19,3 +19,7 @@ pip install PyAutoIt
 ## Usage
 
 ![](/Test.JPG)
+
+1. Contact - You can send message to multiple contacts also. You have to give input like - Contact A,Contact B.
+2. Image and Video Attachment - You can also attach multiple images and videos. You have to give input like - 1.jpg,2.m4a.
+3. Document Attachment - You can also attach multiple documents. You have to give input like - 1.docx,2.pdf.
