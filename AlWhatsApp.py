@@ -282,10 +282,11 @@ class AlWhatsApp:
                 speak("Didn't understand that")
         
         appHighlightFont = font.Font(family='sans-serif', size=12, weight='bold')
+        textHighlightFont = font.Font(family='LEMON MILK', size=10)
 
         receiver = Label(root, text="Contact")
         receiver.pack( )
-        receiver.config(bg=color,fg="white",font=appHighlightFont)
+        receiver.config(bg=color,fg="white",font=textHighlightFont)
         receiver = Entry(root, highlightbackground=color, highlightcolor=color, highlightthickness=3, bd=0, font=appHighlightFont)
         receiver.pack(fill=X)
 
@@ -295,18 +296,18 @@ class AlWhatsApp:
 
         imgvid= Label(root, text="Image and Video Attachment")
         imgvid.pack( )
-        imgvid.config(bg=color,fg="white",font=appHighlightFont)
+        imgvid.config(bg=color,fg="white",font=textHighlightFont)
         imgvid = Entry(root, highlightbackground=color, highlightcolor=color, highlightthickness=3, bd=0, font=appHighlightFont)
         imgvid.pack(fill=X)
 
         doc= Label(root, text="Document Attachment")
         doc.pack( )
-        doc.config(bg=color,fg="white",font=appHighlightFont)
+        doc.config(bg=color,fg="white",font=textHighlightFont)
         doc = Entry(root, highlightbackground=color, highlightcolor=color, highlightthickness=3, bd=0, font=appHighlightFont)
         doc.pack(fill=X)
 
         whatsapp = Button(root, text="WhatsApp",  command=main)
-        whatsapp.config(bg=color,fg="white",font=appHighlightFont)
+        whatsapp.config(bg=color,fg="white",font=textHighlightFont)
         whatsapp.pack(fill=X)
 
         text = Text(root, font="sans-serif",  relief=SUNKEN , highlightbackground='#1ca48c', highlightcolor='#1ca48c', highlightthickness=5, bd=0)
