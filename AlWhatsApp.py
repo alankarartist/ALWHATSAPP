@@ -306,7 +306,7 @@ class AlWhatsApp:
         doc = Entry(root, highlightbackground=color, highlightcolor=color, highlightthickness=3, bd=0, font=appHighlightFont)
         doc.pack(fill=X)
 
-        whatsapp = Button(root, text="WhatsApp",  command=main)
+        whatsapp = Button(root, borderwidth=0, text="WhatsApp", highlightthickness=5, command=main)
         whatsapp.config(bg=color,fg="white",font=textHighlightFont)
         whatsapp.pack(fill=X)
 
