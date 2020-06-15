@@ -24,3 +24,4 @@ pip install PyAutoIt
 2. Image and Video Attachment - You can also attach multiple images and videos. You have to give input like - 1.jpg,2.m4a.
 3. Document Attachment - You can also attach multiple documents. You have to give input like - 1.docx,2.pdf.
 4. To send any attachment you have to keep it in /AlWhatsApp/Documents folder. 
+5. Click on WHATSAPP.
