@@ -152,12 +152,12 @@ class AlWhatsApp:
             if imagename:
                 if ',' not in imagename:
                     # Attachment Drop Down Menu
-                    clipButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
+                    clipButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/div[1]/span')
                     clipButton.click()
                     time.sleep(1)
 
                     # To send Videos and Images.
-                    mediaButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button')
+                    mediaButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/span/div/div/ul/li[1]/button')
                     mediaButton.click()
                     time.sleep(3)
                     imagePath = os.getcwd() + "\\AlWhatsApp\\Documents\\" + imagename
@@ -171,12 +171,12 @@ class AlWhatsApp:
                     imagename = imagename.split(',')
                     for i in imagename:
                         # Attachment Drop Down Menu
-                        clipButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
+                        clipButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/div[1]/span')
                         clipButton.click()
                         time.sleep(1)
 
                         # To send Videos and Images.
-                        mediaButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button')
+                        mediaButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/span/div/div/ul/li[1]/button')
                         mediaButton.click()
                         time.sleep(3)
                         imagePath = os.getcwd() + "\\AlWhatsApp\\Documents\\" + i
@@ -192,12 +192,12 @@ class AlWhatsApp:
             if docfilename:
                 if ',' not in docfilename:
                     # Attachment Drop Down Menu
-                    clipButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
+                    clipButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/div[1]/span')
                     clipButton.click()
                     time.sleep(1)
 
                     # To send Videos and Images.
-                    mediaButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button')
+                    mediaButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/span/div/div/ul/li[3]/button')
                     mediaButton.click()
                     time.sleep(3)
                     docPath = os.getcwd() + "\\AlWhatsApp\\Documents\\" + docfilename
@@ -211,12 +211,12 @@ class AlWhatsApp:
                     docfilename = docfilename.split(',')
                     for d in docfilename:
                         # Attachment Drop Down Menu
-                        clipButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/div/span')
+                        clipButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/div[1]/span')
                         clipButton.click()
                         time.sleep(1)
 
                         # To send Videos and Images.
-                        mediaButton = browser.find_element_by_xpath('//*[@id="main"]/header/div[3]/div/div[2]/span/div/div/ul/li[1]/button')
+                        mediaButton = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div[1]/span/div/div/ul/li[3]/button')
                         mediaButton.click()
                         time.sleep(3)
                         docPath = os.getcwd() + "\\AlWhatsApp\\Documents\\" + d
@@ -306,7 +306,7 @@ class AlWhatsApp:
         doc = Entry(root, highlightbackground=color, highlightcolor=color, highlightthickness=3, bd=0, font=appHighlightFont)
         doc.pack(fill=X)
 
-        whatsapp = Button(root, borderwidth=0, text="WhatsApp", highlightthickness=5, command=main)
+        whatsapp = Button(root, text="WhatsApp", borderwidth=0, highlightthickness=5, command=main)
         whatsapp.config(bg=color,fg="white",font=textHighlightFont)
         whatsapp.pack(fill=X)
 
