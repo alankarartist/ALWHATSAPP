@@ -25,3 +25,9 @@ pip install PyAutoIt
 3. Document Attachment - You can also attach multiple documents. You have to give input like - 1.docx,2.pdf.
 4. To send any attachment you have to keep it in /AlWhatsApp/Documents folder. 
 5. Click on WHATSAPP.
+
+## Contributor
+
+<a href="https://github.com/alankarartist/ALWHATSAPP/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=alankarartist/ALWHATSAPP" />
+</a>
